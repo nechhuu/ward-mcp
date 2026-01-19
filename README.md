@@ -43,6 +43,16 @@ pip install semgrep ward-mcp
 
 Done. Your AI agent now has access to Ward's scanning tools.
 
+## Auto-scan Setup 
+
+Add to your project's `CLAUDE.md` or `.cursorrules`:
+
+```
+After generating code, use ward mcp - scan_remote tool to check for issues.
+Format: scan_remote(code_files=[{"path": "filename.py", "content": "code"}])
+If issues found: fix and scan again.
+```
+
 ## Tools
 
 | Tool | Description |
@@ -50,6 +60,15 @@ Done. Your AI agent now has access to Ward's scanning tools.
 | `scan_remote` | Scan code content directly |
 | `scan` | Scan files by path |
 | `scan_with_custom_rule` | Scan with custom YAML rules |
+
+
+## Warning - first mcp call will be longer due to installation.
+
+## Troubleshooting
+
+**"semgrep not found"** - Run `pip install semgrep`
+
+**Server won't start** - Check `python -m ward mcp` runs without errors
 
 ## Roadmap
 
@@ -63,24 +82,6 @@ Done. Your AI agent now has access to Ward's scanning tools.
 - Dependency flow tracking and data flow analysis
 
 Stay tuned for updates!
-
-## Auto-scan Setup (Optional)
-
-Add to your project's `CLAUDE.md` or `.cursorrules`:
-
-```
-After generating code, use ward mcp - scan_remote tool to check for issues.
-Format: scan_remote(code_files=[{"path": "filename.py", "content": "code"}])
-If issues found: fix and scan again.
-```
-
-## Warning - first mcp call will be longer due to installation.
-
-## Troubleshooting
-
-**"semgrep not found"** - Run `pip install semgrep`
-
-**Server won't start** - Check `python -m ward mcp` runs without errors
 
 ## License
 
