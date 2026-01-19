@@ -1,6 +1,6 @@
 [project]
 name = "ward-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "MCP server for AI-powered code quality analysis"
 requires-python = ">=3.10"
 dependencies = [

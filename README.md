@@ -51,6 +51,19 @@ Done. Your AI agent now has access to Ward's scanning tools.
 | `scan` | Scan files by path |
 | `scan_with_custom_rule` | Scan with custom YAML rules |
 
+## Roadmap
+
+**Phase 1: AI-Powered Analysis** (Coming Soon)
+- `explain_issue` - LLM-powered detailed explanations for detected issues
+- `suggest_fix` - AI-generated code fixes with context-aware suggestions
+
+**Phase 2: Cross-File Intelligence** (Coming Soon)
+- `analyze_cross_file` - Graph-based taint analysis across multiple files
+- Detect complex vulnerabilities that span multiple modules
+- Dependency flow tracking and data flow analysis
+
+Stay tuned for updates!
+
 ## Auto-scan Setup (Optional)
 
 Add to your project's `CLAUDE.md` or `.cursorrules`:
