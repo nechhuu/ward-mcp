@@ -1,0 +1,9 @@
+id: broad-exception
+target_concept: exception_handler
+relationship: wrong_child
+severity: warning
+message: "Catching Exception/BaseException is too broad. Catch specific exceptions."
+languages:
+  - python
+  - javascript
+  - typescript

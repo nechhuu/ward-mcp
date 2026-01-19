@@ -1,0 +1,11 @@
+id: import-in-function
+target_concept: import
+relationship: ancestor_contains
+relationship_target: function
+severity: warning
+message: "Import found inside function. Move to top of file."
+languages:
+  - python
+  - javascript
+  - typescript
+  - go

@@ -1,0 +1,23 @@
+id: n-plus-one-query
+target_concept: query_call
+relationship: repeated_in
+relationship_target: loop
+severity: error
+message: "Query inside loop detected. Use bulk operations."
+languages:
+  - python
+  - javascript
+  - typescript
+query_patterns:
+  - "*.get"
+  - "*.filter"
+  - "*.all"
+  - "*.first"
+  - "*.one"
+  - "*.execute"
+  - "*.fetchone"
+  - "*.fetchall"
+  - "session.query"
+  - "*.find"
+  - "*.find_one"
+  - "*.find_all"
